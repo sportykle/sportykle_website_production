@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown } from 'lucide-react'
-import { navLinks } from '@/data/navigation'
+import { navLinks, APP_LOGIN_URL } from '@/data/navigation'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
 import { Button } from '@/components/ui/Button'
 import { Logo } from '@/components/ui/Logo'
@@ -75,7 +75,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <ThemeToggle />
             <Button href="/book-demo" variant="outline" size="sm">Book Demo</Button>
-            <Button href="/book-demo" size="sm">Start Free Trial</Button>
+            <Button href={APP_LOGIN_URL} size="sm">Login / Sign Up</Button>
           </div>
 
           <div className="flex lg:hidden items-center gap-2">
@@ -107,7 +107,7 @@ export function Header() {
                 </Link>
               ))}
               <div className="pt-4 flex flex-col gap-2">
-                <Button href="/book-demo" className="w-full">Start Free Trial</Button>
+                <Button href={APP_LOGIN_URL} className="w-full">Login / Sign Up</Button>
                 <Button href="/book-demo" variant="outline" className="w-full">Book Demo</Button>
               </div>
             </div>

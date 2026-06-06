@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { SEO } from '@/components/ui/SEO'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { Button } from '@/components/ui/Button'
@@ -116,10 +116,10 @@ export function Contact() {
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button type="submit" size="lg">Schedule Demo</Button>
-                <Button href="https://wa.me/919876543210" external variant="outline" size="lg">
+                <Button href="https://wa.me/917351001002" external variant="outline" size="lg">
                   <MessageCircle size={18} /> WhatsApp Us
                 </Button>
-                <Button href="tel:+919876543210" variant="outline" size="lg">
+                <Button href="tel:+917351001002" variant="outline" size="lg">
                   <Phone size={18} /> Call Us
                 </Button>
               </div>
@@ -132,8 +132,7 @@ export function Contact() {
             >
               {[
                 { icon: Mail, title: 'Email', value: 'hello@sportykle.com', href: 'mailto:hello@sportykle.com' },
-                { icon: Phone, title: 'Phone', value: '+91 98765 43210', href: 'tel:+919876543210' },
-                { icon: MapPin, title: 'Office', value: 'Kochi, Kerala, India', href: undefined },
+                { icon: Phone, title: 'Phone', value: '+91 73510 01002', href: 'tel:+917351001002' },
               ].map((item) => (
                 <div key={item.title} className="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
                   <div className="w-10 h-10 rounded-lg bg-brand-50 dark:bg-brand-950 flex items-center justify-center mb-3">

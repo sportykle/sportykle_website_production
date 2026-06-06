@@ -1,3 +1,5 @@
+export const APP_LOGIN_URL = '/select-organization'
+
 export const navLinks = [
   { label: 'Features', href: '/features' },
   { label: 'Solutions', href: '/solutions' },
@@ -29,5 +31,6 @@ export const footerLinks = {
     { label: 'Contact', href: '/contact' },
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms', href: '/terms' },
+    { label: 'Refund Policy', href: '/refund-policy' },
   ],
 }
