@@ -4,6 +4,12 @@ declare module '*.jsx' {
   export default component
 }
 
+declare module '@/api/cutomeAxios' {
+  import type { AxiosInstance } from 'axios'
+  const customAxios: AxiosInstance
+  export default customAxios
+}
+
 declare module '@/widgets/NotificationProvider.jsx' {
   import type { ReactNode } from 'react'
 
